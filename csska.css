@@ -17,6 +17,7 @@ form select {
     transition: border-color 0.3s; /* Плавное изменение цвета границы */
 }
 
+
 form input:focus,
 form textarea:focus,
 form select:focus {

@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 header {
    width: 100%; /* Ширина на всю ширину окна */
    height: 60px; /* Задать фиксированную высоту */
