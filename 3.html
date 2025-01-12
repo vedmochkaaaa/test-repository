@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор увлечений</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <header class="header">Выбор увлечений</header>
+
+        <aside class="sidebar">
+            <p>Выберите свои увлечения и предпочтения.</p>
+        </aside>
+
+        <main class="main-content">
+            <form>
+                <fieldset>
+                    <legend>Выберите ваше любимое времяпрепровождение:</legend>
+                    <label>
+                        <input type="radio" name="activity" value="sport"> Спорт
+                    </label><br>
+                    <label>
+                        <input type="radio" name="activity" value="music"> Музыка
+                    </label><br>
+                    <label>
+                        <input type="radio" name="activity" value="reading"> Чтение
+                    </label><br>
+                    <label>
+                        <input type="radio" name="activity" value="travel"> Путешествия
+                    </label>
+                </fieldset>
+
+                <br>
+
+
+                <fieldset>
+                    <legend>Какие жанры вас интересуют? (можно выбрать несколько)</legend>
+                    <label>
+                        <input type="checkbox" name="genres" value="fiction"> Фантастика
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="genres" value="romance"> Романтика
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="genres" value="mystery"> Детективы
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="genres" value="history"> История
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="genres" value="science"> Научная литература
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </main>
+
+        <footer class="footer"></footer>
+
+    </div>
+</body>
+</html>

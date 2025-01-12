@@ -1,0 +1,169 @@
+/* Изменение стандартного выделения текста */
+::selection {
+    background: #fec9c3; /* Цвет фона выделения */
+    color: #ffffff; /* Цвет текста при выделении */
+}
+
+/* Оформление полей формы */
+form input,
+form textarea,
+form select {
+    background-color: #ffffff; /* Фон полей формы */
+    border: 1px solid rgb(198, 157, 153); /* Цвет границы */
+    border-radius: 5px; /* Закруглённые углы */
+    padding: 10px; /* Отступы внутри */
+    font-size: 16px; /* Размер шрифта */
+    font-family: 'Segoe Print', cursive; /* Шрифт */
+    transition: border-color 0.3s; /* Плавное изменение цвета границы */
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: rgb(144, 114, 111); /* Цвет границы при фокусе */
+    outline: none; /* Убираем стандартную обводку */
+}
+
+/* Стилизация ссылок в навигации */
+nav a {
+    color: #fff; /* Цвет текста ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Плавный переход цвета и подчеркивания */
+}
+
+nav a:hover {
+    color: rgb(198, 157, 153); /* Цвет ссылки при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+nav a:focus {
+    outline: 2px solid rgba(254, 201, 195, 0.7); /* Подсветка ссылки при фокусе */
+}
+
+/* Стилизация кнопок */
+button {
+    background-color: rgb(254, 201, 195); /* Фоновый цвет кнопки */
+    color: #fff; /* Цвет основного текста */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Закруглённые углы */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s, transform 0.3s; /* Плавный эффект при наведении */
+}
+
+button:hover {
+   background:#90726f; /* Цвет фона при наведении */
+   transform: scale(1.05); /* Лёгкое увеличение при наведении */
+}
+
+button:active {
+    transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+}
+
+button:focus {
+    outline: none; /* Убираем стандартную рамку фокуса */
+    box-shadow: 0 0 0 4px rgba(254, 201, 195, 0.5); /* Тень при фокусе */
+}
+
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: 'Segoe Print', cursive; /* Определяем шрифт */
+}
+
+header {
+   background: radial-gradient(
+        circle at 50% 50%, /* Центрирование градиента */
+        rgba(254, 201, 195, 1) 43.18%, /* Первый цвет с позицией */
+        rgba(250, 242, 221, 1) 95.45% /* Второй цвет с позицией */
+    );
+   text-shadow:
+      -1px -1px 0 #90726f,
+       1px -1px 0 #90726f,
+      -1px  1px 0 #90726f,
+       1px  1px 0 #90726f; /* Цвет обводки */
+   color: #fff;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+main {
+  padding: 20px;
+}
+
+main h1 {
+   text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form field set {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+form input,
+form select {
+  width: 95%;
+  color: #90726f;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+   background: radial-gradient(
+        circle at 50% 50%, /* Центрирование градиента */
+        rgba(254, 201, 195, 1) 43.18%, /* Первый цвет с позицией */
+        rgba(250, 242, 221, 1) 95.45% /* Второй цвет с позицией */
+    );
+   text-shadow:
+      -1px -1px 0 #90726f,
+       1px -1px 0 #90726f,
+      -1px  1px 0 #90726f,
+       1px  1px 0 #90726f; /* Цвет обводки */
+   color: #fff; /* Цвет текста */
+   border: none; /* Убираем границу */
+   padding: 10px; /* Отступы внутри кнопки */
+   cursor: pointer; /* Указатель при наведении */
+   border-radius: 5px; /* Закруглённые углы */
+   transition: background 0.3s, transform 0.3s; /* Плавные переходы */
+}
+input:enabled {
+     border: 2px solid green; /* Стили для включенного поля */
+}
+
+input:required {
+    border: 2px solid red; /* Стили для обязательных полей */
+}
+
+input:focus, textarea:focus {
+    border-color:#fec9c3; /* Цвет границы при фокусе */
+}
+input:focus {
+    border: 2px solid #90726f; /* Стилизация границы поля при фокусе */
+}
+
+input::placeholder {
+    color: #90726f; /* Цвет подсказки */
+    font-style: italic; /* Наклонный шрифт для подсказки */
+}
